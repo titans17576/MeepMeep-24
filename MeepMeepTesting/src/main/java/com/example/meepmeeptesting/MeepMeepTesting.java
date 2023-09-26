@@ -21,18 +21,13 @@ public class MeepMeepTesting {
                 .followTrajectorySequence(drive ->
                         drive.trajectorySequenceBuilder(new Pose2d(60, -60, 0))
                                 .turn(Math.toRadians(90))
-                                .turn(Math.toRadians(90))
-                                .forward(120)
-                                .turn(Math.toRadians(90))
-                                .forward(120)
-                                .turn(Math.toRadians(90))
-                                .forward(120)
-                                .turn(Math.toRadians(90))
+                                .splineToLinearHeading(new Pose2d(-12, -12, Math.toRadians(270)), Math.toRadians(90))
+
                                 .build()
                 );
-        Image img = null;
-        try { img = ImageIO.read(new File("CENTERSTAGE_OFFICIAL.png")); }
-        catch (IOException e) {}
+        //Image img = null;
+        //try { img = ImageIO.read(new File("CENTERSTAGE_OFFICIAL.png")); }
+        //catch (IOException e) {}
 
         meepMeep.setBackground(MeepMeep.Background.FIELD_POWERPLAY_OFFICIAL)
                 .setDarkMode(true)
