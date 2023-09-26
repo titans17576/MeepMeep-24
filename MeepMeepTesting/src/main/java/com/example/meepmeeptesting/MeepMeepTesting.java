@@ -30,9 +30,9 @@ public class MeepMeepTesting {
                                 .turn(Math.toRadians(90))
                                 .build()
                 );
-        //Image img = null;
-        //try { img = ImageIO.read(new File("CENTERSTAGE_OFFICIAL.png")); }
-        //catch (IOException e) {}
+        Image img = null;
+        try { img = ImageIO.read(new File("CENTERSTAGE_OFFICIAL.png")); }
+        catch (IOException e) {}
 
         meepMeep.setBackground(MeepMeep.Background.FIELD_POWERPLAY_OFFICIAL)
                 .setDarkMode(true)
