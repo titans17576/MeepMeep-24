@@ -20,21 +20,13 @@ public class MeepMeepTesting {
                 .setConstraints(60, 60, Math.toRadians(180), Math.toRadians(180), 15)
                 .followTrajectorySequence(drive ->
                         drive.trajectorySequenceBuilder(new Pose2d(60, -60, 0))
-                                .turn(Math.toRadians(90))
-                                .turn(Math.toRadians(90))
-                                .forward(120)
-                                .turn(Math.toRadians(90))
-                                .forward(120)
-                                .turn(Math.toRadians(90))
-                                .forward(120)
-                                .turn(Math.toRadians(90))
                                 .build()
                 );
         Image img = null;
-        try { img = ImageIO.read(new File("CENTERSTAGE_OFFICIAL.png")); }
+        try { img = ImageIO.read(new File("./MeepMeepTesting/src/main/java/com/example/meepmeeptesting/CENTERSTAGE_OFFICIAL.png")); }
         catch (IOException e) {}
 
-        meepMeep.setBackground(MeepMeep.Background.FIELD_POWERPLAY_OFFICIAL)
+        meepMeep.setBackground(img)
                 .setDarkMode(true)
                 .setBackgroundAlpha(0.95f)
                 .addEntity(myBot)
