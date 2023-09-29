@@ -18,8 +18,9 @@ public class MeepMeepTesting {
         RoadRunnerBotEntity myBot = new DefaultBotBuilder(meepMeep)
                 // Set bot constraints: maxVel, maxAccel, maxAngVel, maxAngAccel, track width
                 .setConstraints(60, 60, Math.toRadians(180), Math.toRadians(180), 15)
+                .setDimensions(12,16)
                 .followTrajectorySequence(drive ->
-                        Zach.path1(drive, new Pose2d(60,60,Math.toRadians(180)))
+                        Noah.path1(drive, new Pose2d(60,60,Math.toRadians(180)))
                 );
         Image img = null;
         try { img = ImageIO.read(new File("./MeepMeepTesting/src/main/java/com/example/meepmeeptesting/CENTERSTAGE_OFFICIAL.png")); }
