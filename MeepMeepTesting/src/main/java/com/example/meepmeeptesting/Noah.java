@@ -24,7 +24,7 @@ public class Noah {
 
     }
     public static TrajectorySequence blueLeft(DriveShim drive, Pose2d startPose){
-        return drive.trajectorySequenceBuilder(new Pose2d(56, -36, Math.toRadians(180)))
+        return drive.trajectorySequenceBuilder(startPose)
 
                 //if TeamProp=left {
 
