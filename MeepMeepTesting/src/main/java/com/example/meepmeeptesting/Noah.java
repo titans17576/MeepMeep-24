@@ -16,13 +16,7 @@ public class Noah {
                 //}
                 .waitSeconds(0.5)
                 .lineToLinearHeading(startPose)
-                //if TeamProp=left {
-
-                //else if TeamProp=center
-
-                //else if TeamProp=right
                 .lineToLinearHeading(new Pose2d(-56, -57, Math.toRadians(270)))
-                //}
                 .lineToSplineHeading(new Pose2d(-12, -58, Math.toRadians(270)))
                 .waitSeconds(2)
                 .lineToLinearHeading(new Pose2d(-12, 58, Math.toRadians(270)))
