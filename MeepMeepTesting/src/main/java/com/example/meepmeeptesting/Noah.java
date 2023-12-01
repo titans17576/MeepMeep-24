@@ -5,7 +5,7 @@ import com.noahbres.meepmeep.roadrunner.DriveShim;
 import com.noahbres.meepmeep.roadrunner.trajectorysequence.TrajectorySequence;
 
 public class Noah {
-    public static TrajectorySequence redRight(DriveShim drive, Pose2d startPose) {
+    public static TrajectorySequence blueRight(DriveShim drive, Pose2d startPose) {
         return drive.trajectorySequenceBuilder(startPose)
                 //if TeamProp=left {
                 //.lineToSplineHeading(new Pose2d(-35, -34, Math.toRadians(90)
@@ -23,7 +23,7 @@ public class Noah {
                 .build();
 
     }
-    public static TrajectorySequence blueLeft(DriveShim drive, Pose2d startPose){
+    public static TrajectorySequence redLeft(DriveShim drive, Pose2d startPose){
         return drive.trajectorySequenceBuilder(startPose)
 
                 //if TeamProp=left {
