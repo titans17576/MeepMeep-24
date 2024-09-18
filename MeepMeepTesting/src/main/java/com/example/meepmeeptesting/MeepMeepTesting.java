@@ -44,7 +44,7 @@ public class MeepMeepTesting {
                         Noah.redLeft(drive, Positions.RED_LANDING.value())
                 );
         Image img = null;
-        try { img = ImageIO.read(new File("./MeepMeepTesting/src/main/java/com/example/meepmeeptesting/CENTERSTAGE_OFFICIAL.png")); }
+        try { img = ImageIO.read(new File("MeepMeepTesting/src/main/java/com/example/meepmeeptesting/intothedeep.png")); }
         catch (IOException e) {}
 
         meepMeep.setBackground(img)
